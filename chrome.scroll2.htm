@@ -45,7 +45,7 @@
     });
 
     document.getElementById('log').addEventListener("wheel", ev => {
-      ev.preventDefault();
+      ev.stopPropagation();
       console.log('log wheel');
     });
     document.getElementById('log').addEventListener("scroll", ev => {
